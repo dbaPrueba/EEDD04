@@ -5,7 +5,7 @@
 
 package com.ellago;
 
-//hola
+//otro		
 public class Main {
 
     public static void main(String[] args) {
