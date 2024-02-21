@@ -69,7 +69,7 @@ public class CCuenta {
     {
         return cuenta;
     }
-
+ 
 
     public String getNombre() {
         return nombre;
