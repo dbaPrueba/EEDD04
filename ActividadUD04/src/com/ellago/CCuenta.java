@@ -43,6 +43,11 @@ public class CCuenta {
     }
 
 
+    /**
+     * 
+     * @param cantidad
+     * @throws Exception
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
