@@ -12,16 +12,18 @@ public class Main {
         CCuenta cuenta1;
         double saldoActual;
 
-        cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
+        operativaCuenta(2300.0);		
+	}
+
+	public static void operativaCuenta(double cantidad) {
+		CCuenta cuenta1;
+		double saldoActual;
+		cuenta1 = new CCuenta("Antonio López","1000-2365-85-1230456789",2500,0);
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es"+ saldoActual );
-
-        operativaCuenta(cuenta1);
-    }
-
-	public static void operativaCuenta(CCuenta cuenta1) {
-		try {
-            cuenta1.retirar(2300);
+        
+        try {
+            cuenta1.retirar(cantidad);
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
